@@ -4,9 +4,9 @@ pipeline {
     stages {
         stage('Clone git') {
             steps {
-                echo "Choning the Git repository"
+                echo "Cloning the Git repository"
                 git 'https://github.com/secy2520/Jenkins.git'
-                //git 'https://github.com/yourusername/yourrepository.git'
+                // git 'https://github.com/yourusername/yourrepository.git'
             }
         }
 
@@ -21,11 +21,11 @@ pipeline {
         stage('Test') {
             steps {
                 echo "Execute test commands or scripts"
-                  sh "chmod u+x Test.py"
-                sh "./Tes.py"
+                sh "chmod u+x Test.py"
+                sh "./Test.py"
             }
         }
-
+    }
 
     post {
         success {
@@ -39,4 +39,5 @@ pipeline {
             // Add any failure actions or notifications here
         }
     }
-} 
+}
+
