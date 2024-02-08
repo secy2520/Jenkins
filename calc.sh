@@ -12,7 +12,7 @@ echo -n "Enter First Number: "
 echo -n "Enter Second Number: "
 read b
 echo -n "Enter the Choice: "
-ch = $3
+ch=$3
 
 case $ch in
    1) res=`expr $a + $b`
