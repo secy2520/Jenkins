@@ -7,11 +7,6 @@ echo "2. Subtraction"
 echo "3. Multiplication"
 echo "4. Division"
 
-echo -n "Enter First Number: "
-
-echo -n "Enter Second Number: "
-read b
-echo -n "Enter the Choice: "
 ch=$3
 
 case $ch in
